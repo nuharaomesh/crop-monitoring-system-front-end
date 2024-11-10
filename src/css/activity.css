@@ -1,5 +1,45 @@
-#component {
-    width: 10px;
-    height: 10px;
-    background-color: red;
+#activity_section {
+    display: flex;
+}
+
+#activity_main_content {
+    display: flex;
+    height: 90vh;
+    gap: 5px;
+}
+
+#activity_left_side_sec {
+    flex: 0 0 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#activity_sec_border {
+    flex: 0 0 30%;
+}
+
+#cultivation_process {
+    flex: 1;
+}
+
+#activity_right_side_sec {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#activity_graphs {
+    flex: 0 0 40%;
+    display: flex;
+    gap: 5px;
+}
+
+#activity_fields_stat, #activity_staff_stat {
+    flex: 1;
+}
+
+#cultivated_props {
+    flex: 1;
 }
