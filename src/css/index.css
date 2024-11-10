@@ -1,0 +1,120 @@
+body {
+    background-color: #EDEDED !important;
+    display: flex;
+}
+
+.aside_panel {
+    width: 240px;
+    height: 933px;
+
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 11px rgb(196 196 196 / 10%);
+
+    margin: 10px;
+}
+
+#btn_list {
+    width: 220px;
+    margin:  0 auto;
+}
+
+.menu_btn {
+    width: 220px;
+    height: 34px;
+
+    border: 0 !important;
+    border-radius: 5px !important;
+    text-align: left !important;
+
+    background-color: white !important;
+    color: #35353A;
+
+    font-size: 14px !important;
+    font-weight: 450 !important;
+
+    padding-left: 15px !important;
+}
+
+.menu_btn>i {
+    margin-right: 8px;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_btn.active {
+    color: white !important;
+    background-color: #35353A !important;
+}
+
+.custom_btn_list {
+    width: 180px !important;
+    margin: 0 auto;
+}
+
+.management_btn_list {
+    width: 180px;
+    height: 34px;
+
+    border: 0;
+    border-radius: 5px ;
+    text-align: left;
+
+    background-color: white !important;
+    color: #35353A !important;
+
+    font-size: 14px;
+    font-weight: 450;
+
+    padding-left: 15px;
+}
+
+.management_btn_list>i {
+    margin-right: 6px;
+}
+
+.management_btn_list.active {
+    color: white !important;
+    background-color: #48484b !important   
+}
+
+.menu-btn.active {
+    color: white !important;
+    background-color: #35353A !important;
+}
+
+.side_panel {
+    width: 1650px;
+    height: 859px;
+
+    margin: 10px 0;
+}
+
+#dashboard_section {
+    border: 2px solid black;
+}
+
+#activity_section {
+    border: 2px solid blue;
+}
+
+#reports_section {
+    border: 2px solid rebeccapurple;
+}
+
+#header_container {
+    width: 1650px;
+    height: 65px;
+
+    background-color: white;
+    border: 1px solid rgb(223, 223, 223);
+    box-shadow: 0 0 11px rgb(196 196 196 / 10%);
+
+    border-radius: 20px;
+    margin-top: 10px;
+}
