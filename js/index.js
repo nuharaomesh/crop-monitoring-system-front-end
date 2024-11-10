@@ -3,13 +3,17 @@ const managementBtnList = document.querySelectorAll('.management_btn_list');
 
 const dashboardSec = $('#dashboard_section')
 const activitySec = $('#activity_section')
+const fieldSec = $('#field_section')
 const reportsSec = $('#reports_section')
 
-dashboardSec.css("display", "block")
+document.querySelector('#activity_btn').classList.add('active')
+
+dashboardSec.css("display", "none")
 activitySec.css("display", "none")
+fieldSec.css("display", "block")
 reportsSec.css("display", "none")
 
-const displaySec = [dashboardSec, activitySec, reportsSec]
+const displaySec = [dashboardSec, activitySec, fieldSec, reportsSec]
 
 function changeDisplayState(section) {
     for (let i = 0; i < displaySec.length; i++) {
@@ -29,11 +33,13 @@ function activity() {
     changeDisplayState(activitySec)
 }
 
+function field() {
+    changeDisplayState(fieldSec)
+}
+
 function reports() {
     changeDisplayState(reportsSec)
 }
-
-document.querySelector('#dashboard_btn').classList.add('active')
 
 menuBtnList.forEach(button => {
 
