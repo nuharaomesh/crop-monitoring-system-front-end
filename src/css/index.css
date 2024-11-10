@@ -1,15 +1,16 @@
 body {
     background-color: #EDEDED !important;
     display: flex;
+    font-family: 'Poppins' !important;
 }
 
 .aside_panel {
     width: 240px;
     height: 933px;
 
-    border: 1px solid rgb(223, 223, 223);
     border-radius: 10px;
     background-color: white;
+    border: 1px solid rgb(223, 223, 223);
     box-shadow: 0 0 11px rgb(196 196 196 / 10%);
 
     margin: 10px;
@@ -99,8 +100,8 @@ body {
     border: 2px solid black;
 }
 
-#activity_section {
-    border: 2px solid blue;
+#field_section {
+    /*border: 2px solid red;*/
 }
 
 #reports_section {
@@ -115,6 +116,19 @@ body {
     border: 1px solid rgb(223, 223, 223);
     box-shadow: 0 0 11px rgb(196 196 196 / 10%);
 
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 10px;
+}
+
+.custom_component {
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgb(223, 223, 223);
+    box-shadow: 0 0 11px rgb(196 196 196 / 10%);
+}
+.custom_card {
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid rgb(223, 223, 223);
+    box-shadow: 0 0 11px rgb(196 196 196 / 10%);
 }
