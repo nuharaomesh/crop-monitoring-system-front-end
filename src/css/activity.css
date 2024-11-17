@@ -15,10 +15,6 @@
     gap: 5px;
 }
 
-#activity_sec_border {
-    flex: 0 0 30%;
-}
-
 #cultivation_process {
     flex: 1;
 }
@@ -43,3 +39,235 @@
 #cultivated_props {
     flex: 1;
 }
+
+        /*assigned staff style*/
+
+#activity_staff_stat {
+    box-sizing: border-box;
+    padding: 12px 14px;
+}
+
+#assign_staff_count {
+    border: 2px solid red;
+}
+
+.item_desc {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #767676;
+}
+
+.item_emoji {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+
+    font-size: 14px;
+    color: white;
+    box-sizing: border-box;
+    margin-left: 48px;
+    padding: 6px;
+}
+
+.item_count {
+    width: 78px;
+    height: 78px;
+
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 19px;
+    margin-top: -23px;
+
+    font-weight: bold;
+    color: white;
+}
+
+.activity_custom_header {
+    font-size: 23px;
+    font-weight: bolder;
+    color: #858585;
+}
+
+#staff_and_equipments {
+    box-sizing: border-box;
+    padding: 0 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#activity_staff_count>i {
+    border: 3px solid #D0D0FF;
+    background-color: #35353A;
+}
+
+#activity_staff_count>h2 {
+    background-color: #35353A;
+    border: 5px solid #D0D0FF;
+}
+
+#activity_equipment_count>i {
+    background-color: #57577A;
+    border: 3px solid #E4E4FF;
+}
+
+#activity_equipment_count>h2 {
+    background-color: #57577A;
+    border: 5px solid #E4E4FF;
+}
+
+#staff_vehicle {
+    display: flex;
+    justify-content: center;
+}
+
+#activity_vehicle_count>i {
+    background-color: #4242AD;
+    border: 3px solid #C9C9FB;
+}
+
+#activity_vehicle_count>h2 {
+    background-color: #4242AD;
+    border: 5px solid #C9C9FB;
+}
+
+#cultivation_process {
+    padding: 20px;
+}
+
+                        /*Cultivation field list*/
+
+#cultivation_process_header {
+    display: flex;
+}
+
+#cultivation_header_left {
+    width: 50%;
+}
+
+#cultivation_header_left>p {
+    color: gray;
+}
+
+#cultivation_header_right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: end;
+    flex-wrap: wrap;
+}
+
+#cultivation_header_right>div {
+    width: 100%;
+    border: 2px solid #e3e3ef;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+#cultivation_header_right>div>form>input {
+    border: 0;
+}
+
+#cultivation_header_right>div>form>button {
+    width: 40px;
+    background-color: white !important;
+    color: #707070;
+    border: 0;
+}
+
+#cultivation_process_header>div>h1 {
+    width: fit-content;
+    font-size: 28px;
+    font-weight: bold;
+    color: #515151;
+}
+
+#uncultivated_field_list {
+    height: 704px;
+    /*border: 2px solid red;*/
+}
+
+::-webkit-scrollbar {
+    /*width: 5px;*/
+}
+
+#uncultivated_field_items {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 13px;
+}
+
+                    /*uncultivated field card*/
+
+.uncultivated_field_card {
+    width: 270px;
+    height: 220px;
+}
+
+.field_card_head {
+    height: 0;
+}
+
+.field_card_head>div {
+    width: 225px;
+    height: 123px;
+    position: relative;
+    z-index: 2;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.field_card_head>div>img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.field_card_body {
+    height: 216px;
+    background-color: white;
+    border: 2px solid #d7d7d7;
+    margin-top: 10px;
+    padding: 0 10px;
+    border-radius: 5px 20px 10px 10px;
+}
+
+.field_card_body>h1 {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #4b4b4b;
+    margin-top: 121px;
+}
+
+.field_card_body p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.field_card_body>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field_card_body>div>button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+
+    border: 0;
+    background-color: #2CAED1;
+}
+
+                            /*cultivated properties*/
+
