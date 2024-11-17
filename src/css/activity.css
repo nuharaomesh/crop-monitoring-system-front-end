@@ -256,6 +256,8 @@
     justify-content: space-between;
 }
 
+
+
 .field_card_body>div>button {
     width: 40px;
     height: 40px;
@@ -271,3 +273,199 @@
 
                             /*cultivated properties*/
 
+#cultivated_props {
+    padding: 14px;
+}
+
+#cultivated_props>div:first-child {
+    display: flex;
+}
+
+#cultivated_props_left {
+    width: 50%;
+}
+
+#cultivated_props_left>h1 {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #5f5f5f;
+}
+
+#cultivated_props_left>p {
+    color: gray;
+}
+
+#cultivated_props_right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: end;
+    flex-wrap: wrap;
+}
+
+#cultivated_props_right>div {
+    margin-right: 5px;
+}
+
+#cultivated_field_list {
+    height: 399px;
+}
+
+::-webkit-scrollbar {
+    /*width: 5px;*/
+}
+
+#cultivated_field_items {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+                    /*cultivated_field_card*/
+
+.cultivated_field_card {
+    height: 180px;
+    margin-top: 13px;
+    border: 2px solid #e1e1e1;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 8px;
+
+    display: flex;
+}
+
+.cultivated_field_card:hover {
+    background-color: #EFEFEF;
+}
+
+.cultivated_field_img {
+    width: 30%;
+    overflow: hidden;
+}
+
+.cultivated_field_img>img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.cultivated_field_details {
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 55%;
+}
+
+.cultivated_field_details>p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #979797;
+}
+
+.cultivated_field_plant_stat {
+}
+
+#activity_plant_count>div {
+    margin-left: 10px;
+}
+
+#activity_plant_count>div>i {
+    background-color: #43C337;
+    border: 3px solid #99FF8F;
+}
+
+#activity_plant_count>div>h2 {
+    background-color: #43C337;
+    border: 5px solid #99FF8F;
+}
+
+.cultivated_field_name {
+    font-size: 26px;
+    font-weight: bold;
+    color: #4f4f4f;
+    margin: 0;
+}
+
+.field_location_and_size,.field_location_and_size>div {
+    display: flex;
+}
+
+.field_location_and_size>div:last-child {
+    margin-left: 20px;
+}
+
+.field_location_and_size>div:last-child>i {
+    color: red;
+}
+
+.field_location_and_size>div>p {
+    font-weight: bolder;
+    color: #48484b;
+}
+
+.cultivated_field_size {
+    margin: 0 0 0 4px;
+}
+
+.cultivated_field_location {
+    margin: 0 0 0 4px;
+}
+
+.cultivated_field_harvest_stage {
+    font-size: 23px;
+    font-weight: bold;
+    color: #2e9f2e;
+    margin-bottom: 2px;
+}
+
+#cultivated_field_date_and_category {
+    display: flex;
+}
+
+#cultivated_field_date_and_category>div {
+    width: 50%;
+    height: fit-content !important;
+}
+
+#cultivated_field_date_and_category>div:first-child>p:last-child {
+    font-size: 15px;
+    margin: 0;
+    color: #454545;
+    font-weight: bolder;
+}
+
+#cultivated_field_date_and_category>div:last-child>p:last-child {
+    width: fit-content;
+    height: fit-content;
+
+    font-size: 13px;
+    font-weight: bolder;
+
+    color: #454545;
+    background-color: #9AFF9A;
+
+    border-radius: 3px;
+    margin: 0;
+    padding: 4px 10px;
+}
+
+#cultivated_field_date_and_category>div>p:last-child {
+    margin: 0;
+}
+
+#cultivated_field_date_and_category>div>p:first-child {
+    font-size: 13px;
+    color: #9f9f9f;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.cultivated_field_harvest_expect_date {
+
+}
+
+.cultivated_field_crop_category {
+
+}
