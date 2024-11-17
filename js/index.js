@@ -9,8 +9,8 @@ const reportsSec = $('#reports_section')
 document.querySelector('#activity_btn').classList.add('active')
 
 dashboardSec.css("display", "none")
-activitySec.css("display", "none")
-fieldSec.css("display", "block")
+activitySec.css("display", "block")
+fieldSec.css("display", "none")
 reportsSec.css("display", "none")
 
 const displaySec = [dashboardSec, activitySec, fieldSec, reportsSec]

@@ -92,16 +92,117 @@
         <section id="activity_section" class="side_panel">
             <div id="activity_main_content">
                 <div id="activity_left_side_sec">
-                    <div id="activity_sec_border" class="custom_component"></div>
-                    <div id="cultivation_process" class="custom_component"></div>
+                    <div id="cultivation_process" class="custom_component">
+
+                        <div id="cultivation_process_header">
+                            <div id="cultivation_header_left">
+                                <h1>Add new Cultivation</h1>
+                                <p>choose a field for next Cultivation</p>
+                            </div>
+
+                            <div id="cultivation_header_right">
+                                <div>
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="" type="button">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="cultivation_field_container">
+
+                            <div id="uncultivated_field_list">
+                                <div id="uncultivated_field_items">
+
+                                    <div class="uncultivated_field_card">   <!-- item card -->
+
+                                        <div class="field_card_head">
+                                            <div>
+                                                <img src="src/assets/download.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="field_card_body">
+                                            <h1 class="">Grepod egers</h1>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <i></i>
+                                                        <p>12 ha</p>
+                                                    </div>
+                                                    <div>
+                                                        <i></i>
+                                                        <p>Horana</p>
+                                                    </div>
+                                                </div>
+                                                <button>+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="cultivation_process_container">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="activity_right_side_sec">
                     <div id="activity_graphs">
-                        <div id="activity_fields_stat" class="custom_component"></div>
-                        <div id="activity_staff_stat" class="custom_component"></div>
+
+                        <div id="activity_fields_stat" class="custom_component">
+
+                        </div>
+
+                        <div id="activity_staff_stat" class="custom_component">
+
+                            <div id="activity_staff_stat_header">
+                                <h1 class="activity_custom_header">Assigned Staff</h1>
+                            </div>
+
+                            <div id="staff_and_equipments">
+                                <div id="activity_staff_count">
+                                    <p class="item_desc">Current working staff</p>
+                                    <i class="fa-regular fa-user item_emoji"></i>
+                                    <h2 class="item_count">10</h2>
+                                </div>
+                                <div id="activity_equipment_count">
+                                    <p class="item_desc">Used Equipment</p>
+                                    <i class="fa-regular fa-user item_emoji"></i>
+                                    <h2 class="item_count">10</h2>
+                                </div>
+                            </div>
+                            <div id="staff_vehicle">
+                                <div id="activity_vehicle_count">
+                                    <p class="item_desc">Used Vehicle</p>
+                                    <i class="fa-regular fa-user item_emoji"></i>
+                                    <h2 class="item_count">10</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div id="cultivated_props" class="custom_component">
+
+                        <div id="">
+                            <div id="cultivated_props_left">
+                                <h1>Cultivated properties</h1>
+                                <p>Choose a field more details.</p>
+                            </div>
+                            <div id="cultivated_props_right">
+
+                            </div>
+                        </div>
+
+                        <div id="cultivated_field_list">
+                            <div id="cultivated_field_item">
+
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -113,7 +214,19 @@
             <div id="field_main_content">
 
                 <div id="field_sec_header" class="custom_component">
+                    <div>
+                        <div id="field_header_desc">
+                            <h1>Manage your fields.</h1>
+                            <button class="custom_button">Add new</button>
+                        </div>
+                        <img src="" alt="">
+                    </div>
+                    <div id="field_harvest_bar_graph">
 
+                    </div>
+                    <div id="field_and_cultivation_count">
+
+                    </div>
                 </div>
 
                 <div id="field_mng_sec" class="custom_component">
@@ -122,7 +235,7 @@
 
                         <div id="field_data_header">
 
-                            <h1>Manage your fields.</h1>
+                            <h1>Current fields</h1>
                             <p>search the field you looking for</p>
                         </div>
                         <div id="field_categories">
@@ -139,11 +252,11 @@
                                 </div>
                             </div>
                             <div class="dropdown show">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Cultivated
                                 </a>
 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>
                                     <a class="dropdown-item" href="#">Something else here</a>
@@ -189,7 +302,7 @@
                                             </div>
                                         </div>
                                     </div>
-<!--end-->
+                                                            <!--end-->
                                 </li>
                             </ul>
                         </div>
