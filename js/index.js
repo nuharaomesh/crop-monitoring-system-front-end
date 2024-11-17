@@ -4,16 +4,18 @@ const managementBtnList = document.querySelectorAll('.management_btn_list');
 const dashboardSec = $('#dashboard_section')
 const activitySec = $('#activity_section')
 const fieldSec = $('#field_section')
+const cropSec = $('#crop_section')
 const reportsSec = $('#reports_section')
 
 document.querySelector('#activity_btn').classList.add('active')
 
 dashboardSec.css("display", "none")
-activitySec.css("display", "block")
+activitySec.css("display", "none")
 fieldSec.css("display", "none")
+cropSec.css("display", "block")
 reportsSec.css("display", "none")
 
-const displaySec = [dashboardSec, activitySec, fieldSec, reportsSec]
+const displaySec = [dashboardSec, activitySec, fieldSec, cropSec, reportsSec]
 
 function changeDisplayState(section) {
     for (let i = 0; i < displaySec.length; i++) {
@@ -35,6 +37,10 @@ function activity() {
 
 function field() {
     changeDisplayState(fieldSec)
+}
+
+function crop() {
+    changeDisplayState(cropSec)
 }
 
 function reports() {

@@ -41,21 +41,13 @@
                             <i class="fa-solid fa-map-location"></i>
                             Field
                         </button>
-                        <button id="crop_btn" class="management_btn_list main_buttons">
+                        <button id="crop_btn" class="management_btn_list main_buttons" onclick="crop()">
                             <i class="fa-solid fa-seedling"></i>
                             Crop
                         </button>
                         <button id="staff_btn" class="management_btn_list main_buttons">
                             <i class="fa-regular fa-user"></i>
                             Staff
-                        </button>
-                        <button id="vehicle_btn" class="management_btn_list main_buttons">
-                            <i class="fa-solid fa-car"></i>
-                            Vehicle
-                        </button>
-                        <button id="equipment_btn" class="management_btn_list main_buttons">
-                            <i class="fa-solid fa-wrench"></i>
-                            Equipment
                         </button>
                     </div>
                 </li>
@@ -114,7 +106,7 @@
 
                         <div id="cultivation_field_container">
 
-                            <div id="uncultivated_field_list">
+                            <div id="uncultivated_field_list" style="display: none">
                                 <div id="uncultivated_field_items">
 
                                     <div class="uncultivated_field_card">   <!-- item card -->
@@ -144,7 +136,180 @@
 
                                 </div>
                             </div>
+
                             <div id="cultivation_process_container">
+
+                                <div id="cultivation_process_top">
+                                    <button><</button>
+                                    <h1>Manage new Cultivation</h1>
+                                </div>
+
+                                <div id="cultivation_process_bottom">
+
+                                    <div id="cultivation_details">
+
+                                        <div id="field_img">
+                                            <img src="src/assets/download.jpeg" alt="">
+                                        </div>
+
+                                        <div id="field_details">
+
+                                            <h1>Grepod egers</h1>
+
+                                            <div>
+                                                <div>
+                                                    <i class="fa-solid fa-expand"></i>
+                                                    <p>12 ha</p>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                    <p>Horana</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="crop_details_component">
+
+                                            <h1 class="custom_header_main_prc">Crop details</h1>
+                                            <div>
+                                                <div id="crop_details_img">
+                                                    <img src="src/assets/download%20(1).jpeg" alt="">
+                                                </div>
+
+                                                <div id="crop_details">
+                                                    <p>wheat</p>
+                                                    <div>
+                                                        <div>
+                                                            <i class="fa-solid fa-wrench item_emoji"></i>
+                                                            <h2 class="item_count">10</h2>
+                                                        </div>
+                                                        <div>
+                                                            <i class="fa-regular fa-user item_emoji"></i>
+                                                            <h2 class="item_count">10</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="proceed_btn">
+                                            <button>Proceed</button>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="cultivation_resources_data">
+                                        <div id="cultivation_resources_crop_and_equipment">
+                                            <p>Assign Crop and equipments</p>
+                                            <div>
+                                                <div id="cultivation_resources_crop" class="custom_component_body">
+
+                                                    <p>Add a crop</p>
+                                                    <div class="dropdown show">
+                                                        <a class="custom_dropdown_btn btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            Select Crop
+                                                        </a>
+
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink7">
+                                                            <a class="dropdown-item" href="#">Actidddon</a>
+                                                            <a class="dropdown-item" href="#">Anothsfdsfer action</a>
+                                                            <a class="dropdown-item" href="#">Something else here</a>
+                                                        </div>
+                                                    </div>
+                                                    <div id="assigning_crop">
+                                                        <div id="assign_crop_header">
+                                                            <p>Name</p>
+                                                            <p>Category</p>
+                                                            <p>Season</p>
+                                                        </div>
+                                                        <hr>
+                                                        <div id="assign_crop_body">
+
+                                                            <div class="assign_crop_and_equ_item">
+                                                                <p class="assign_crop_and_equ_name">wheat</p>
+                                                                <p class="assign_crop_and_equ_category">dry food</p>
+                                                                <p class="assign_crop_and_equ_season">Summer</p>
+                                                                <button class="assign_crop_and_equ_remove">-</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div id="cultivation_resources_equipment" class="custom_component_body">
+
+                                                    <p>Add a Equipment</p>
+                                                    <div class="dropdown show">
+                                                        <a class="custom_dropdown_btn btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            Select equipment
+                                                        </a>
+
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
+                                                            <a class="dropdown-item" href="#">Actidddon</a>
+                                                            <a class="dropdown-item" href="#">Anothsfdsfer action</a>
+                                                            <a class="dropdown-item" href="#">Something else here</a>
+                                                        </div>
+                                                    </div>
+                                                    <div id="assigning_equipment">
+                                                        <div id="assign_equipment_header">
+                                                            <p>Name</p>
+                                                            <p>Category</p>
+                                                            <p>Available</p>
+                                                        </div>
+                                                        <hr>
+                                                        <div id="assign_equipment_body">
+
+                                                            <div class="assign_crop_and_equ_item">
+                                                                <p class="assign_crop_and_equ_name">wheat</p>
+                                                                <p class="assign_crop_and_equ_category">dry food</p>
+                                                                <p class="assign_crop_and_equ_season">Summer</p>
+                                                                <button class="assign_crop_and_equ_remove">-</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="cultivation_resources_staff_data" class="custom_component_body">
+
+                                            <p>Assign new staff to the field</p>
+                                            <div>
+                                                <div class="dropdown show">
+                                                    <a class="custom_dropdown_btn btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Role
+                                                    </a>
+
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
+                                                        <a class="dropdown-item" href="#">Actidddon</a>
+                                                        <a class="dropdown-item" href="#">Anothsfdsfer action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="cultivation_staff_table">
+                                                <div id="cultivation_staff_table_head">
+                                                    <p>Name</p>
+                                                    <p>Role</p>
+                                                    <p>Email</p>
+                                                </div>
+                                                <div id="cultivation_staff_table_body">
+
+                                                    <div class="cultivation_staff_card">
+                                                        <div class="cultivation_staff_img">
+                                                            <img src="src/assets/download.jpeg" alt="">
+                                                        </div>
+                                                        <p class="cultivation_staff_name">Omesh nuhara</p>
+                                                        <p class="cultivation_staff_role">Agronomist</p>
+                                                        <p class="cultivation_staff_email">omeshnuharatestaasda.com</p>
+                                                        <button class="cultivation_staff_assign_btn">Assign</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -152,6 +317,7 @@
                 </div>
 
                 <div id="activity_right_side_sec">
+
                     <div id="activity_graphs">
 
                         <div id="activity_fields_stat" class="custom_component">
@@ -188,7 +354,7 @@
 
                     <div id="cultivated_props" class="custom_component">
 
-                        <div id="">
+                        <div>
                             <div id="cultivated_props_left">
                                 <h1>Cultivated properties</h1>
                                 <p>Choose a field more details.</p>
@@ -386,9 +552,14 @@
             </div>
         </section>
 
+        <section id="crop_section" class="side_panel">
+
+        </section>
+
         <section id="reports_section" class="side_panel">
 
         </section>
+
     </section>
 
 <script src="js/lib/jquery.js"></script>
