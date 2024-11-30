@@ -3,9 +3,7 @@ let cropUpdateBtn = $(".crop_update_btn")
 
 cropUpdateBtn.css("display", "none")
 
-function updateCrop() {
 
-}
 
 $(document).ready( function() {
     $(".crop_item_card_body").hover(
