@@ -1,0 +1,327 @@
+#staff_section {
+}
+
+#staff_section_main_container {
+    height: 857px;
+    display: flex;
+    gap: 5px;
+}
+
+#staff_section_left {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#staff_section_header {
+    flex: 0 0 35%;
+}
+
+#manage_staff {
+    flex: 1;
+    padding: 10px;
+}
+
+#staff_section_right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#manage_vehicle {
+    flex: 0 0 50%;
+}
+
+#manage_equipment {
+    flex: 1;
+}
+
+                    /*Manage staff*/
+
+.lists_headers {
+    width: 100%;
+    height: 18%;
+    display: flex;
+}
+
+.lists_headers>div {
+
+}
+
+.lists_headers>div:last-child {
+    margin-left: auto;
+}
+
+.lists_headers>div:last-child>div>p {
+    margin-bottom: 0;
+    color: #5d5d5d;
+    font-weight: bolder;
+}
+
+.lists_headers>div>div {
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.lists_headers>div>p {
+    color: #7d7d7d;
+    margin-bottom: 0;
+}
+
+.lists_headers>div>div>h1 {
+    font-size: 29px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #727272;
+    margin-bottom: 0;
+}
+
+#manage_staff_body {
+    height: 82%;
+}
+
+#manage_staff_body_header {
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+#staff_list {
+    width: 100%;
+    height: 90%;
+}
+
+.staff_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.staff_img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fixed-width {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.table_staff_list {
+    height: 100px;
+}
+
+.scrollable-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.scrollable-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.scrollable-table th,
+.scrollable-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.scrollable-table tbody {
+    display: block;
+    max-height: 325px;
+    overflow-y: auto;
+    width: 100%;
+    border: 0 !important;
+}
+
+.scrollable-table tr {
+    display: table;
+    width: 100%;
+    border: 0 solid #ff000000;
+}
+
+.scrollable-table td {
+    white-space: nowrap;
+}
+
+.staff_name_and_profile {
+    width: 100px;
+    display: flex;
+}
+
+#staff_profile {
+    width: 80px;
+}
+
+#staff_name {
+    width: 184px;
+}
+
+#staff_role {
+    width: 80px;
+}
+
+#staff_status {
+    width: 100px;
+}
+
+#staff_phn_no {
+    width: 150px;
+}
+
+#staff_email {
+
+}
+
+.staff_profile {
+
+}
+
+.staff_name {
+}
+
+.staff_role {
+
+}
+
+.staff_status {
+
+}
+
+.staff_phn_no {
+
+}
+
+.staff_email {
+
+}
+
+#manage_vehicle {
+    padding: 10px;
+}
+
+#manage_equipment {
+    padding: 11px;
+}
+
+#vehicle_list_tbl_body, #equipment_list_tbl_body {
+    max-height: 269px !important;
+}
+
+#vehicle_type {
+    width: 185px;
+}
+
+#vehicle_fuel_type {
+    width: 210px;
+}
+
+#vehicle_status {
+    width: 200px;
+}
+
+.equipment_name {
+    width: 26%;
+}
+
+.equipment_type {
+    width: 22%;
+}
+
+.equipment_status {
+    width: 28%;
+}
+
+.equipment_list_count {
+
+}
+
+.custom_status>p {
+    padding: 5px 10px;
+    width: fit-content;
+    margin: 0;
+    border-radius: 5px;
+    background-color: #9AFF9A;
+}
+
+.staff_mng_modal_top {
+    display: flex;
+}
+.staff_mng_modal_top>div:first-of-type {
+    width: 190px;
+    height: 190px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.staff_mng_modal_top>div:last-of-type {
+    width: 72%;
+}
+
+.box_place {
+    margin-top: 10px;
+    display: flex;
+}
+
+.box_place>div {
+    width: 50%;
+}
+
+.box_place>div:first-of-type {
+    margin-right: 5px;
+}
+
+.staff_mng_modal_top>div:first-of-type>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gender-frm>div {
+    display: flex;
+}
+
+.gender-frm>div>div:first-of-type {
+    margin-right: 10px;
+}
+
+.staff_tbl_row:hover {
+    background-color: #d7d7d7;
+}
+
+#staffUpdateButton {
+    margin-right: 5px;
+}
+
+.vehicle_row>td {
+    max-width: 0px !important;
+}
+
+#vehicle_save_modal>div, #vehicle_update_modal>div {
+    display: flex;
+}
+
+.btn_holder {
+    margin-top: 10px;
+    height: 40px;
+}
+
+.btn_holder>button:first-of-type {
+    margin-right: 5px;
+}
+
+.vehicle_remarks_holder>div {
+    width: 100%;
+}
