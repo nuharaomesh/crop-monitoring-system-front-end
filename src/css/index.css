@@ -139,8 +139,9 @@ body {
 
 .custom_button {
     color: #737373;
+    font-size: 15px;
     font-weight: bolder;
-
+    padding: 6px;
     border-radius: 5px;
     background-color: white;
     border: 2px solid #d5d5d5;
@@ -148,8 +149,53 @@ body {
 
 .custom_dropdown_btn {
     background-color: white !important;
-    color: #525252 !important;
-    border: 2px solid #c5c5c5 !important;
+    color: #939393 !important;
+    border: 2px solid #ededed !important;
     margin-right: 10px !important;
     font-weight: bolder !important;
+}
+
+.blur_modal {
+    border-radius: 20px !important;
+    backdrop-filter: blur(5px);
+}
+
+.custom_modal>div:first-child {
+    border: 0 !important;
+}
+
+.custom_modal {
+    border: 0 !important;
+    border-radius: 15px !important;
+}
+
+.custom_header {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #898989;
+}
+
+.btn_holder {
+    height: 40px;
+    display: flex;
+}
+
+.custom_green_btn {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    border: 0;
+    background-color: #10ff2e;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+.custom_delete_btn {
+    width: 45px;
+    height: 45px;
+    border: 0;
+    border-radius: 50px;
+    background-color: #e95555;
+    font-weight: bolder;
+    color: white;
 }
