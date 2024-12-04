@@ -83,12 +83,12 @@ function loadCropCards() {
             alert("ERR: ", err)
         }
     })
-
 }
 
 let cropCode;
 
 $(document).on("click", ".crop_update_btn", function () {
+    
     const card = $(this).closest('.crop_item_card');
 
     cropCode = card.find('.crop_code').text().trim();
@@ -159,30 +159,37 @@ saveCrop.click(function (e) {
     })
 })
 
+$("#crop_image").on("change", function () {
+    const file = this.files[0];
+    const reader = new FileReader();
+  
+    reader.onload = function (e) {
+      $("#addedCropImg").attr("src", e.target.result);
+    };
+  
+    reader.readAsDataURL(file);
+});
+
 updateCrop.click(async function (e) {
     e.preventDefault()
 
     let newCropName = $("#new_crop_name").val()
     let newCropScientificName = $("#new_crop_scientific_name").val()
-    let newCropImg = $("#new_crop_image")[0].files[0]
-    console.log("img", newCropImg);
     let newCropSeason = $("#new_crop_season").val()
     let newCropCategory = $("#new_crop_category").val()
     let newCropGrowthTime = $("#new_crop_growth_time").val()
 
-    const imgElement = document.getElementById('new_crop_img');
 
+
+    // converting img element src as a image object same as file input
+    const cropImgElement = document.getElementById('new_crop_img');
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
 
-    const newCropData = new FormData()
+    canvas.width = cropImgElement.naturalWidth;
+    canvas.height = cropImgElement.naturalHeight;
 
-    // Set canvas dimensions to match the image
-    canvas.width = imgElement.naturalWidth;
-    canvas.height = imgElement.naturalHeight;
-
-    // Draw the image onto the canvas
-    ctx.drawImage(imgElement, 0, 0);
+    ctx.drawImage(cropImgElement, 0, 0);
 
     const file = await new Promise((resolve, reject) => {
         canvas.toBlob((blob) => {
@@ -193,6 +200,8 @@ updateCrop.click(async function (e) {
             }
         }, 'image/jpeg');
     });
+
+    const newCropData = new FormData()
 
     newCropData.append("cropName", newCropName)
     newCropData.append("cropScientificName", newCropScientificName)
@@ -216,6 +225,17 @@ updateCrop.click(async function (e) {
     })
 })
 
+$("#new_crop_image").on("change", function () {
+    const file = this.files[0];
+    const reader = new FileReader();
+  
+    reader.onload = function (e) {
+      $("#new_crop_img").attr("src", e.target.result);
+    };
+  
+    reader.readAsDataURL(file);
+});
+
 deleteCrop.click(function (e) {
     e.preventDefault()
 
@@ -223,10 +243,10 @@ deleteCrop.click(function (e) {
         url: `http://localhost:5050/pcmSystem/api/v1/crops/${cropCode}`,  
         method: "DELETE",                        
         success: function(response) {
-            alert("Customer Deleted!")
+            alert("Crop Deleted!")
         },
         error: function(xhr, status, error) {
-            alert("Customer Not Deleted!")
+            alert("Crop Not Deleted!")
             console.error('Error:', error);
         }
     });
