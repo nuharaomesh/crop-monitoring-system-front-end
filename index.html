@@ -127,208 +127,84 @@
                             <div id="uncultivated_field_list">
                                 <div id="uncultivated_field_items">
 
-                                    <div class="uncultivated_field_card">   <!-- item card -->
+                                    <!-- item card -->
+                                    <div class="uncultivated_field_card">   
 
                                         <div class="field_card_head">
                                             <div>
-                                                <img src="src/assets/download.jpeg" alt="">
+                                                <img src="src/assets/download%20(1).jpeg" alt="" class="unCult_field_img">
                                             </div>
                                         </div>
                                         <div class="field_card_body">
-                                            <h1 class="">Grepod egers</h1>
+                                            <h1 class="unCult_field_name">Grepod egers</h1>
                                             <div>
                                                 <div>
                                                     <div>
                                                         <i class="fa-solid fa-expand"></i>
-                                                        <p>12 ha</p>
+                                                        <p class="unCult_field_size">14 Sq.mt</p>
                                                     </div>
                                                     <div>
                                                         <i class="fa-solid fa-location-dot"></i>
-                                                        <p>Horana</p>
+                                                        <p class="unCult_field_address">Galle</p>
                                                     </div>
                                                 </div>
-                                                <button id="addCultivationBtn" onclick="addCultivation()">+</button>
+                                                <button class="selectedFieldForCultivation">+</button>
                                             </div>
                                         </div>
                                     </div>
 
-                                </div>
-                            </div>
+                                    <!-- item card -->
+                                    <div class="uncultivated_field_card">
 
-                            <div id="cultivation_process_container">
-
-                                <div id="cultivation_process_top">
-                                    <button id="cultivation_process_back_btn" onclick="cultivationProcessBackBtn()"><</button>
-                                    <h1>Manage new Cultivation</h1>
-                                </div>
-
-                                <div id="cultivation_process_bottom">
-
-                                    <div id="cultivation_details">
-
-                                        <div id="field_img">
-                                            <img src="src/assets/download.jpeg" alt="">
-                                        </div>
-
-                                        <div id="field_details">
-
-                                            <h1>Grepod egers</h1>
-
+                                        <div class="field_card_head">
                                             <div>
-                                                <div>
-                                                    <i class="fa-solid fa-expand"></i>
-                                                    <p>12 ha</p>
-                                                </div>
-                                                <div>
-                                                    <i class="fa-solid fa-location-dot"></i>
-                                                    <p>Horana</p>
-                                                </div>
+                                                <img src="src/assets/download.jpeg" alt="" class="unCult_field_img">
                                             </div>
                                         </div>
-
-                                        <div id="crop_details_component">
-
-                                            <h1 class="custom_header_main_prc">Crop details</h1>
+                                        <div class="field_card_body">
+                                            <h1 class="unCult_field_name">Grepod egers</h1>
                                             <div>
-                                                <div id="crop_details_img">
-                                                    <img src="src/assets/download%20(1).jpeg" alt="">
-                                                </div>
-
-                                                <div id="crop_details">
-                                                    <p>wheat</p>
+                                                <div>
                                                     <div>
-                                                        <div>
-                                                            <i class="fa-solid fa-wrench item_emoji"></i>
-                                                            <h2 class="item_count">10</h2>
-                                                        </div>
-                                                        <div>
-                                                            <i class="fa-regular fa-user item_emoji"></i>
-                                                            <h2 class="item_count">10</h2>
-                                                        </div>
+                                                        <i class="fa-solid fa-expand"></i>
+                                                        <p class="unCult_field_size">12 ha</p>
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                        <p class="unCult_field_address">Horana</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div id="proceed_btn">
-                                            <button>Proceed</button>
-                                        </div>
-
-                                    </div>
-
-                                    <div id="cultivation_resources_data">
-                                        <div id="cultivation_resources_crop_and_equipment">
-                                            <p>Assign Crop and equipments</p>
-                                            <div>
-                                                <div id="cultivation_resources_crop" class="custom_component_body">
-
-                                                    <p>Add a crop</p>
-                                                    <div class="dropdown show">
-                                                        <a class="custom_dropdown_btn btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Select Crop
-                                                        </a>
-
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink7">
-                                                            <a class="dropdown-item" href="#">Actidddon</a>
-                                                            <a class="dropdown-item" href="#">Anothsfdsfer action</a>
-                                                            <a class="dropdown-item" href="#">Something else here</a>
-                                                        </div>
-                                                    </div>
-                                                    <div id="assigning_crop">
-                                                        <div id="assign_crop_header">
-                                                            <p>Name</p>
-                                                            <p>Category</p>
-                                                            <p>Season</p>
-                                                        </div>
-                                                        <hr>
-                                                        <div id="assign_crop_body">
-
-                                                            <div class="assign_crop_and_equ_item">
-                                                                <p class="assign_crop_and_equ_name">wheat</p>
-                                                                <p class="assign_crop_and_equ_category">dry food</p>
-                                                                <p class="assign_crop_and_equ_season">Summer</p>
-                                                                <button class="assign_crop_and_equ_remove">-</button>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div id="cultivation_resources_equipment" class="custom_component_body">
-
-                                                    <p>Add a Equipment</p>
-                                                    <div class="dropdown show">
-                                                        <a class="custom_dropdown_btn btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Select equipment
-                                                        </a>
-
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
-                                                            <a class="dropdown-item" href="#">Actidddon</a>
-                                                            <a class="dropdown-item" href="#">Anothsfdsfer action</a>
-                                                            <a class="dropdown-item" href="#">Something else here</a>
-                                                        </div>
-                                                    </div>
-                                                    <div id="assigning_equipment">
-                                                        <div id="assign_equipment_header">
-                                                            <p>Name</p>
-                                                            <p>Category</p>
-                                                            <p>Available</p>
-                                                        </div>
-                                                        <hr>
-                                                        <div id="assign_equipment_body">
-
-                                                            <div class="assign_crop_and_equ_item">
-                                                                <p class="assign_crop_and_equ_name">wheat</p>
-                                                                <p class="assign_crop_and_equ_category">dry food</p>
-                                                                <p class="assign_crop_and_equ_season">Summer</p>
-                                                                <button class="assign_crop_and_equ_remove">-</button>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="cultivation_resources_staff_data" class="custom_component_body">
-
-                                            <p>Assign new staff to the field</p>
-                                            <div>
-                                                <div class="dropdown show">
-                                                    <a class="custom_dropdown_btn btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        Role
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
-                                                        <a class="dropdown-item" href="#">Actidddon</a>
-                                                        <a class="dropdown-item" href="#">Anothsfdsfer action</a>
-                                                        <a class="dropdown-item" href="#">Something else here</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="cultivation_staff_table">
-                                                <div id="cultivation_staff_table_head">
-                                                    <p>Name</p>
-                                                    <p>Role</p>
-                                                    <p>Email</p>
-                                                </div>
-                                                <div id="cultivation_staff_table_body">
-
-                                                    <div class="cultivation_staff_card">
-                                                        <div class="cultivation_staff_img">
-                                                            <img src="src/assets/download.jpeg" alt="">
-                                                        </div>
-                                                        <p class="cultivation_staff_name">Omesh nuhara</p>
-                                                        <p class="cultivation_staff_role">Agronomist</p>
-                                                        <p class="cultivation_staff_email">omeshnuharatestaasda.com</p>
-                                                        <button class="cultivation_staff_assign_btn">Assign</button>
-                                                    </div>
-
-                                                </div>
+                                                <button class="selectedFieldForCultivation">+</button>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- item card -->
+                                    <div class="uncultivated_field_card">
+
+                                        <div class="field_card_head">
+                                            <div>
+                                                <img src="src/assets/download.jpeg" alt="" class="unCult_field_img">
+                                            </div>
+                                        </div>
+                                        <div class="field_card_body">
+                                            <h1 class="unCult_field_name">Grepod egers</h1>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fa-solid fa-expand"></i>
+                                                        <p class="unCult_field_size">12 ha</p>
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                        <p class="unCult_field_address">Horana</p>
+                                                    </div>
+                                                </div>
+                                                <button class="selectedFieldForCultivation">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -465,6 +341,261 @@
             </div>
         </section>
 
+        <div id="cultivation_process_handler" class="side_panel custom_component">
+            <div id="cultivation_process_handler_header">
+                <div id="cultivation_process_top">
+                    <button id="cultivation_process_back_btn" onclick="cultivationProcessBackBtn()"><</button>
+                    <h1>Manage new Cultivation</h1>
+                </div>
+            </div>
+            <div id="cultivation_process_handler_body">
+
+                <div id="cultivation_process_handler_body_left">
+                    <div id="cultivation_details">
+
+                        <div id="field_img">
+                            <img src="src/assets/download.jpeg" alt="" id="unCultFieldImg">
+                        </div>
+
+                        <div id="field_details">
+
+                            <h1 id="unCultFieldName">Grepod egers</h1>
+
+                            <div>
+                                <div>
+                                    <i class="fa-solid fa-expand"></i>
+                                    <p id="unCultFieldSize">12 ha</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p id="unCultFieldAddress">Horana</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="crop_details_component">
+
+                            <h1 class="custom_header_main_prc">Crop details</h1>
+                            <div>
+                                <div id="crop_details_img">
+                                    <img src="src/assets/download%20(1).jpeg" alt="" id="unCultCropImg">
+                                </div>
+
+                                <div id="crop_details">
+                                    <p id="cultivation_crop_name"><i class="fa-solid fa-seedling"></i> wheat</p>
+                                    <p id="cultivation_crop_category">Searial</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="proceed_btn">
+                            <button>Proceed</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="cultivation_process_handler_body_right">
+                    <div id="cultivation_process_handler_added_tables">
+                        <!--                        table 3-->
+                        <div id="cultivation_handler_staff_added_table">
+                            <div id="cultivation_resources_added_staff_data">
+
+                                <p class="staff_table_header">Assign new staff to the field</p>
+                                <div>
+                                    <div>
+                                        <input class="form-control me-2" list="searchAddedStaffs" placeholder="Search your staff" id="searchAddedStaff">
+                                        <datalist id="searchAddedStaffs">
+                                            <option value="Electrical">
+                                            <option value="Mechanical">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div id="cultivation_added_staff_table">
+                                    <div id="cultivation_added_staff_table_head">
+                                        <p>Name</p>
+                                        <p>Role</p>
+                                        <p>Email</p>
+                                    </div>
+                                    <div id="cultivation_added_staff_table_body">
+
+                                        <div class="cultivation_staff_card">
+                                            <div class="cultivation_staff_img">
+                                                <img src="src/assets/download.jpeg" alt="">
+                                            </div>
+                                            <p class="cultivation_staff_name">Omesh nuhara</p>
+                                            <p class="cultivation_staff_role">Agronomist</p>
+                                            <p class="cultivation_staff_email">omeshnuharatestaasda.com</p>
+                                            <button class="cultivation_staff_assign_btn">-</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cultivation_handler_equipment_added_table">
+                            <div id="cultivation_added_resources_equipment">
+
+                                <p>Add a Equipment</p>
+                                <div>
+                                    <input class="form-control me-2" list="searchAddedEquipments" placeholder="Equipment type" id="searchAddedEquipment">
+                                    <datalist id="searchAddedEquipments">
+                                        <option value="Electrical">
+                                        <option value="Mechanical">
+                                    </datalist>
+                                </div>
+                                <div id="assigning_added_equipment">
+                                    <div id="assign_added_equipment_header">
+                                        <p>Name</p>
+                                        <p>Category</p>
+                                        <p>Available</p>
+                                    </div>
+                                    <hr>
+                                    <div id="assign_added_equipment_body">
+
+                                        <div class="assign_crop_and_equ_item">
+                                            <p class="assign_crop_and_equ_name">wheel barrow</p>
+                                            <p class="assign_crop_and_equ_category">Harvest <tool></tool></p>
+                                            <p class="assign_crop_and_equ_season">Summer</p>
+                                            <button class="assign_crop_and_equ_remove">-</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cultivation_handler_crop_added_table">
+                            <div id="cultivation_added_resources_crop">
+
+                                <p>Add a crop</p>
+                                <div>
+                                    <input class="form-control me-2" list="searchAddedCrops" placeholder="Crop type" id="searchAddedCrop">
+                                    <datalist id="searchAddedCrops">
+                                        <option value="Electrical">
+                                        <option value="Mechanical">
+                                    </datalist>
+                                </div>
+                                <div id="assigning_added_crop">
+                                    <div id="assign_added_crop_header">
+                                        <p>Name</p>
+                                        <p>Category</p>
+                                        <p>Season</p>
+                                    </div>
+                                    <hr>
+                                    <div id="assign_added_crop_body">
+
+                                        <div class="assign_crop_and_equ_item">
+                                            <p class="assign_crop_and_equ_name">wheat</p>
+                                            <p class="assign_crop_and_equ_category">dry food</p>
+                                            <p class="assign_crop_and_equ_season">Summer</p>
+                                            <button class="assign_crop_and_equ_remove">-</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cultivation_process_handler_data_tables">
+                        <!--                        table 3-->
+                        <div id="cultivation_handler_staff_data_table">
+
+                            <div id="cultivation_resources_staff_data">
+
+                                <p class="staff_table_header">Assign new staff to the field</p>
+                                <div>
+                                    <div>
+                                        <input class="form-control me-2" list="searchStaffs" placeholder="Search your staff" id="searchStaff">
+                                        <datalist id="searchStaffs">
+                                            <option value="Electrical">
+                                            <option value="Mechanical">
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div id="cultivation_staff_table">
+                                    <div id="cultivation_staff_table_head">
+                                        <p>Name</p>
+                                        <p>Role</p>
+                                        <p>Email</p>
+                                    </div>
+                                    <div id="cultivation_staff_table_body">
+
+                                        <div class="cultivation_staff_card">
+                                            <div class="cultivation_staff_img">
+                                                <img src="src/assets/download.jpeg" alt="">
+                                            </div>
+                                            <p class="cultivation_staff_name">Omesh nuhara</p>
+                                            <p class="cultivation_staff_role">Agronomist</p>
+                                            <p class="cultivation_staff_email">omeshnuharatestaasda.com</p>
+                                            <button class="cultivation_staff_assign_btn">Assign</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cultivation_handler_equipment_data_table">
+                            <div id="cultivation_resources_equipment">
+
+                                <p>Add a Equipment</p>
+                                <div>
+                                    <input class="form-control me-2" list="searchEquipments" placeholder="Equipment type" id="searchEquipment">
+                                    <datalist id="searchEquipments">
+                                        <option value="Electrical">
+                                        <option value="Mechanical">
+                                    </datalist>
+                                </div>
+                                <div id="assigning_equipment">
+                                    <div id="assign_equipment_header">
+                                        <p>Name</p>
+                                        <p>Category</p>
+                                        <p>Available</p>
+                                    </div>
+                                    <hr>
+                                    <div id="assign_equipment_body">
+
+                                        <div class="assign_crop_and_equ_item">
+                                            <p class="assign_crop_and_equ_name">wheel barrow</p>
+                                            <p class="assign_crop_and_equ_category">Harvest <tool></tool></p>
+                                            <p class="assign_crop_and_equ_season">Summer</p>
+                                            <button class="assign_crop_and_equ_remove">+</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cultivation_handler_crop_data_table">
+                            <div id="cultivation_resources_crop">
+
+                                <p>Add a crop</p>
+                                <div>
+                                    <input class="form-control me-2" list="searchCrops" placeholder="Crop type" id="searchCrop">
+                                    <datalist id="searchCrops">
+                                        <option value="Electrical">
+                                        <option value="Mechanical">
+                                    </datalist>
+                                </div>
+                                <div id="assigning_crop">
+                                    <div id="assign_crop_header">
+                                        <p>Name</p>
+                                        <p>Category</p>
+                                        <p>Season</p>
+                                    </div>
+                                    <hr>
+                                    <div id="assign_crop_body">
+
+                                        <div class="assign_crop_and_equ_item">
+                                            <p class="assign_crop_and_equ_name">wheat</p>
+                                            <p class="assign_crop_and_equ_category">dry food</p>
+                                            <p class="assign_crop_and_equ_season">Summer</p>
+                                            <button class="assign_crop_and_equ_remove">+</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section id="field_section" class="side_panel">
 
             <div id="field_main_content">
@@ -473,19 +604,20 @@
                     <div>
                         <div id="field_header_desc">
                             <h1>Manage your fields.</h1>
-                            <button id="addNewField" type="button" class="custom_button " data-toggle="modal" data-target="#field_add_modal">Add new</button>
+                            <button id="addNewField" type="button" class="custom_button " data-bs-toggle="modal" data-bs-target="#field_save_modal">Add new</button>
 
-                            <div class="modal fade blur_modal" id="field_add_modal" data-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <!--                Field save modal                        -->
+                            <div class="modal fade blur_modal" id="field_save_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content custom_modal">
                                         <div class="modal-header">
                                             <h1 class="custom_header">Add a new field</h1>
-                                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div id="field_credential">
                                                 <div>
-                                                    <img src="/src/assets/download.jpeg" alt="">
+                                                    <img src="/src/assets/download.jpeg" alt="" id="addedFieldImg">
                                                 </div>
                                                 <div>
                                                     <form>
@@ -537,7 +669,6 @@
 
                     </div>
                 </div>
-
                 <div id="field_mng_sec" class="custom_component">
 
                     <div id="field_data">
@@ -550,18 +681,17 @@
                         <div id="field_categories">
 
                             <div class="dropdown show">
-                                <a class="custom_dropdown_btn btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Cultivated
+                                <a class="custom_dropdown_btn btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Cultivations stat
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#" id="cultivatedFields">Cultivated</a>
+                                    <a class="dropdown-item" href="#" id="uncultivatedFields">Uncultivated</a>
                                 </div>
                             </div>
                             <div class="dropdown show">
-                                <a class="custom_dropdown_btn btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="custom_dropdown_btn btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Harvest stage
                                 </a>
 
@@ -574,17 +704,18 @@
                         </div>
                         <div id="field_data_set">
 
-                            <div class="modal fade blur_modal" id="field_update_modal" data-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <!-- Field update modal -->
+                            <div class="modal fade blur_modal" id="field_update_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content custom_modal">
                                         <div class="modal-header">
                                             <h1 class="custom_header">Update field</h1>
-                                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div id="new_field_credential">
                                                 <div>
-                                                    <img src="/src/assets/download.jpeg" alt="">
+                                                    <img src="/src/assets/download.jpeg" alt="" id="modalCurrentFieldImg">
                                                 </div>
                                                 <div>
                                                     <form>
@@ -603,9 +734,24 @@
                                                     </form>
                                                 </div>
                                             </div>
+                                            <div>
+                                                <div id="update_field_credential_location">
+                                                    <div class="custom_search_bar">
+                                                        <form class="d-flex" role="search">
+                                                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                                            <button class="" type="button">
+                                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                    <div id="update_field_map">
+
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div id="field_update_btn">
                                                 <button id="fieldUpdateButton">Update</button>
-                                                <button id="fieldDeleteButton"><i class="fa-solid fa-trash"></i></button>
+                                                <button id="fieldDeleteButton" class="custom_delete_btn"><i class="fa-solid fa-trash"></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -618,18 +764,20 @@
                                     <div class="field_data_component custom_card select_field">
 
                                         <div class="field_asset">
-                                            <img src="src/assets/download%20(1).jpeg" alt="">
+                                            <img src="src/assets/download%20(1).jpeg" alt="" class="current_field_image">
                                         </div>
 
                                         <div class="field_details">
 
                                             <div class="field_card_left">
+                                                <p class="field_id" style="display:none;">field011</p>
                                                 <p class="field_name">Grepod egers</p>
-                                                <p class="field_size">12ha</p>
-                                                <p class="field_location">Horana</p>
-                                                <p class="growth_stat_tag">Growth stage</p>
-                                                <p class="growth_stage">Young plant</p>
+                                                <p class="field_size">12 Sq.mt</p>
+                                                <p class="field_address">Horana</p>
+                                                <p class="growth_stat_tag">Crop</p> 
+                                                <p class="growth_stage">Wheat</p>
                                                 <p class="harvest_status">Ready for harvest</p>
+                                                <p class="field_location" style="display: none">6.695234, 80.155807</p>
                                             </div>
                                             <div class="field_card_right">
                                                 <div class="staff_stat">
@@ -643,13 +791,56 @@
                                                     </div>
                                                 </div>
                                                 <div class="update_btn">
-                                                    <button class="updateField" onclick="updateField()" data-toggle="modal" data-target="#field_update_modal">
+                                                    <button class="updateField" data-bs-toggle="modal" data-bs-target="#field_update_modal">
                                                         <i class="fa-regular fa-pen-to-square"></i>
                                                     </button>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
+
+                                </li>
+                                <li>
+
+                                    <div class="field_data_component custom_card select_field">
+
+                                        <div class="field_asset">
+                                            <img src="src/assets/download%20(1).jpeg" alt="" class="current_field_image">
+                                        </div>
+
+                                        <div class="field_details">
+
+                                            <div class="field_card_left">
+                                                <p class="field_id" style="display:none;">field012</p>
+                                                <p class="field_name">Grepod egers</p>
+                                                <p class="field_size">12 Sq.mt</p>
+                                                <p class="field_address">Horana</p>
+                                                <p class="growth_stat_tag">Crop</p>
+                                                <p class="field_location" style="display: none">6.695334, 80.55807</p>
+                                                <p>Uncultivated</p>
+                                            </div>
+                                            <div class="field_card_right">
+                                                <div class="staff_stat">
+                                                    <div class="staff_count">
+                                                        <i class="fa-solid fa-users"></i>
+                                                        <h1>0</h1>
+                                                    </div>
+                                                    <div class="equipment_count">
+                                                        <i class="fa-solid fa-wrench"></i>
+                                                        <h1>0</h1>
+                                                    </div>
+                                                </div>
+                                                <div class="update_btn">
+                                                    <button class="updateField" data-bs-toggle="modal" data-bs-target="#field_update_modal">
+                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
                                 </li>
 
                             </ul>
@@ -684,7 +875,7 @@
 
                                             <div>
                                                 <div>
-                                                    <img src="src/assets/download.jpeg" alt="">
+                                                    <img src="src/assets/download.jpeg" alt="" id="addedCropImg">
                                                 </div>
 
                                                 <div>
@@ -1011,6 +1202,7 @@
 
                 <div id="staff_section_left">
                     <div id="staff_section_header" class="custom_component"></div>
+
                     <div id="manage_staff" class="custom_component">
 
                         <div id="manage_staff_header" class="lists_headers">
@@ -1018,19 +1210,102 @@
                             <div>
                                 <div>
                                     <h1>Manage your Staff</h1>
-                                    <button type="button" class="custom_button" data-toggle="modal" data-target="#save_staffs">Add new</button>
+                                    <button type="button" class="custom_button" data-bs-toggle="modal" data-bs-target="#save_staffs" id="addNewStaff">Add new</button>
 
-<!--                                    modal-->
+                                    <!--Modal-->
 
-                                    <div class="modal fade blur_modal" id="save_staffs" data-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal fade blur_modal" id="save_staffs" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg">
                                             <div class="modal-content custom_modal">
                                                 <div class="modal-header">
                                                     <h1 class="custom_header">Add a new Staff member</h1>
-                                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
+                                                    <div class="staff_mng_modal_top">
+                                                        <div>
+                                                            <img src="/src/assets/download.jpeg" alt="" id="new_staff_img">
+                                                        </div>
+                                                        <div>
+                                                            <form>
+                                                                <div class="staff_name_gender_cred box_place">
+                                                                    <div class="mb-3">
+                                                                        <label for="modal_staff_first_name" class="form-label">First name</label>
+                                                                        <input type="text" class="form-control" id="modal_staff_first_name" placeholder="Enter first name">
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="modal_staff_last_name" class="form-label">Last name</label>
+                                                                        <input type="text" class="form-control" id="modal_staff_last_name" placeholder="Enter last name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="box_place">
+                                                                    <div class="gender-frm">
+                                                                        <label class="form-label">Gender</label>
+                                                                        <div>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" value="MALE" type="radio" name="gender-sl" id="flexRadioDefault2" checked>
+                                                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                                                    Male
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" value="FEMALE" type="radio" name="gender-sl" id="flexRadioDefault1">
+                                                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                                                    Female
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="modal_staff_profile" class="form-label">Employee photo</label>
+                                                                        <input type="file" class="form-control" id="modal_staff_profile">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <div>
 
+                                                        <form>
+                                                            <div class="box_place">
+                                                                <div class="mb-3">
+                                                                    <label for="modal_staff_dob" class="form-label">Date of birth</label>
+                                                                    <input type="date" class="form-control" id="modal_staff_dob" placeholder="Enter birthday">
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label for="modal_staff_joined_date" class="form-label">Staff member joined date</label>
+                                                                    <input type="date" class="form-control" id="modal_staff_joined_date" placeholder="Enter joined date">
+                                                                </div>
+                                                            </div>
+                                                            <div class="box_place">
+                                                                <div class="mb-3">
+                                                                    <label for="modal_staff_address" class="form-label">Staff member address</label>
+                                                                    <input type="text" class="form-control" id="modal_staff_address" placeholder="Enter member address">
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label for="modal_staff_contact" class="form-label">Staff member phonNo</label>
+                                                                    <input type="text" class="form-control" id="modal_staff_contact" placeholder="Enter phone number">
+                                                                </div>
+                                                            </div>
+                                                            <div class="box_place">
+                                                                <div class="mb-3">
+                                                                    <label for="modal_staff_email" class="form-label">Staff member Email</label>
+                                                                    <input type="text" class="form-control" id="modal_staff_email" placeholder="Enter email address">
+                                                                </div>
+                                                                <div>
+                                                                    <label for="modal_staff_role" class="form-label">Staff member role</label>
+                                                                    <input class="form-control me-2" list="staffMemberRole" placeholder="Select Category" id="modal_staff_role">
+                                                                    <datalist id="staffMemberRole">
+                                                                        <option value="Scientist">
+                                                                        <option value="Labor">
+                                                                    </datalist>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="btn_holder">
+                                                        <button id="staffSaveButton" class="custom_green_btn">Save</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1086,10 +1361,10 @@
                                     </thead>
                                     <tbody id="staff_list_tbl_body">
 
-                                        <tr>
+                                        <tr class="staff_tbl_row" data-bs-toggle="modal" data-bs-target="#update_staff_modal">
                                             <th scope="row" class="staff_profile">
                                                 <div class="staff_img">
-                                                    <img src="src/assets/download.jpeg" alt="">
+                                                    <img src="src/assets/download.jpeg" alt="" class="staff_photo">
                                                 </div>
                                             </th>
                                             <td class="fixed-width staff_name">Omesh nuhara</td>
@@ -1101,6 +1376,105 @@
 
                                     </tbody>
                                 </table>
+
+<!--                                Staff update modal-->
+                                <div class="modal fade blur_modal" id="update_staff_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content custom_modal">
+                                            <div class="modal-header">
+                                                <h1 class="custom_header">Update your staff member</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="staff_mng_modal_top">
+                                                    <div>
+                                                        <img src="/src/assets/download.jpeg" alt="" id="staff_profile_photo">
+                                                    </div>
+                                                    <div>
+                                                        <form>
+                                                            <div class="staff_name_gender_cred box_place">
+                                                                <div class="mb-3">
+                                                                    <label for="update_modal_staff_first_name" class="form-label">First name</label>
+                                                                    <input type="text" class="form-control" id="update_modal_staff_first_name" placeholder="Enter first name">
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label for="update_modal_staff_last_name" class="form-label">Last name</label>
+                                                                    <input type="text" class="form-control" id="update_modal_staff_last_name" placeholder="Enter last name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="box_place">
+                                                                <div class="gender-frm">
+                                                                    <label class="form-label">Gender</label>
+                                                                    <div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" value="MALE" type="radio" name="new-gender-sl" id="staff_gender_male" checked>
+                                                                            <label class="form-check-label" for="staff_gender_male">
+                                                                                Male
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" value="FEMALE" type="radio" name="new-gender-sl" id="staff_gender_female">
+                                                                            <label class="form-check-label" for="staff_gender_female">
+                                                                                Female
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label for="update_modal_staff_profile" class="form-label">Employee photo</label>
+                                                                    <input type="file" class="form-control" id="update_modal_staff_profile">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div>
+
+                                                    <form>
+                                                        <div class="box_place">
+                                                            <div class="mb-3">
+                                                                <label for="update_modal_staff_dob" class="form-label">Date of birth</label>
+                                                                <input type="date" class="form-control" id="update_modal_staff_dob" placeholder="Enter birthday">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="update_modal_staff_joined_date" class="form-label">Staff member joined date</label>
+                                                                <input type="date" class="form-control" id="update_modal_staff_joined_date" placeholder="Enter joined date">
+                                                            </div>
+                                                        </div>
+                                                        <div class="box_place">
+                                                            <div class="mb-3">
+                                                                <label for="update_modal_staff_address" class="form-label">Staff member address</label>
+                                                                <input type="text" class="form-control" id="update_modal_staff_address" placeholder="Enter member address">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="update_modal_staff_contact" class="form-label">Staff member phonNo</label>
+                                                                <input type="text" class="form-control" id="update_modal_staff_contact" placeholder="Enter phone number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="box_place">
+                                                            <div class="mb-3">
+                                                                <label for="update_modal_staff_email" class="form-label">Staff member Email</label>
+                                                                <input type="text" class="form-control" id="update_modal_staff_email" placeholder="Enter email address">
+                                                            </div>
+                                                            <div>
+                                                                <label for="update_modal_staff_role" class="form-label">Staff member role</label>
+                                                                <input class="form-control me-2" list="newStaffMemberRole" placeholder="Select Category" id="update_modal_staff_role">
+                                                                <datalist id="newStaffMemberRole">
+                                                                    <option value="Scientist">
+                                                                    <option value="Labor">
+                                                                </datalist>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="btn_holder">
+                                                    <button id="staffUpdateButton" class="custom_green_btn">Save</button>
+                                                    <button id="staffDeleteButton" class="custom_delete_btn"><i class="fa-solid fa-trash"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -1114,17 +1488,62 @@
                             <div>
                                 <div>
                                     <h1>Manage Vehicle</h1>
-                                    <button type="button" class="custom_button" data-toggle="modal" data-target="#save_vehicles">Add new</button>
-                                    <!--modal-->
-                                    <div class="modal fade blur_modal" id="save_vehicles" data-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <button type="button" class="custom_button" data-bs-toggle="modal" data-bs-target="#save_vehicles" id="testVehicleNew">Add new</button>
+
+                                    <!--                     Vehicle modal                               -->
+
+                                    <div class="modal fade blur_modal" id="save_vehicles" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg">
                                             <div class="modal-content custom_modal">
                                                 <div class="modal-header">
                                                     <h1 class="custom_header">Add a new Vehicle</h1>
-                                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
-                                                <div class="modal-body">
-
+                                                <div class="modal-body" id="vehicle_save_modal">
+                                                    <div class="box_place">
+                                                        <div>
+                                                            <label for="modal_vehicle_category" class="form-label">Vehicle category</label>
+                                                            <input class="form-control me-2" list="vehicleCategories" placeholder="Select Category" id="modal_vehicle_category">
+                                                            <datalist id="vehicleCategories">
+                                                                <option value="Car">
+                                                                <option value="Van">
+                                                                <option value="Lorry">
+                                                                <option value="Tractor">
+                                                            </datalist>
+                                                        </div>
+                                                        <div>
+                                                            <label for="modal_vehicle_fuel" class="form-label">Vehicle fuel type</label>
+                                                            <input class="form-control me-2" list="vehicleFuelType" placeholder="Select fuel" id="modal_vehicle_fuel">
+                                                            <datalist id="vehicleFuelType">
+                                                                <option value="Petrol">
+                                                                <option value="Diesel">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box_place">
+                                                        <div>
+                                                            <label for="modal_vehicle_status" class="form-label">Vehicle status</label>
+                                                            <input class="form-control me-2" list="vehicleStatus" placeholder="Select current status" id="modal_vehicle_status">
+                                                            <datalist id="vehicleStatus">
+                                                                <option value="Active">
+                                                                <option value="Available">
+                                                                <option value="Not available">
+                                                            </datalist>
+                                                        </div>
+                                                        <div>
+                                                            <label for="modal_vehicle_licence" class="form-label">Vehicle licence number</label>
+                                                            <input class="form-control me-2" placeholder="Enter licence number" id="modal_vehicle_licence">
+                                                        </div>
+                                                    </div>
+                                                    <div class="vehicle_remarks_holder">
+                                                        <div>
+                                                            <label for="modal_vehicle_remarks" class="form-label">Vehicle remarks</label>
+                                                            <textarea class="form-control me-2" placeholder="Enter vehicle remarks" id="modal_vehicle_remarks"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn_holder">
+                                                        <button class="custom_green_btn" id="vehicleSaveButton">Save</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1154,20 +1573,80 @@
                                         <th scope="col" id="vehicle_type">Vehicle type</th>
                                         <th scope="col" id="vehicle_fuel_type">Fuel type</th>
                                         <th scope="col" id="vehicle_status">status</th>
-                                        <th scope="col" id="vehicle_count">Count</th>
+                                        <th scope="col" id="vehicle_licence_num">Licence number</th>
                                     </tr>
                                 </thead>
                                 <tbody id="vehicle_list_tbl_body">
 
-                                    <tr>
+                                    <tr class="vehicle_row" data-bs-toggle="modal" data-bs-target="#update_vehicles">
                                         <td class="fixed-width vehicle_type">Van</td>
                                         <td class="fixed-width vehicle_fuel_type">Petrol</td>
                                         <td class="fixed-width vehicle_status custom_status"><p>Available</p></td>
-                                        <td class="fixed-width vehicle_count">10</td>
+                                        <td class="fixed-width vehicle_licence">09876</td>
+                                        <td class="fixed-width vehicle_remarks" style="display: none">Engine: Good</td>
                                     </tr>
 
                                 </tbody>
                             </table>
+<!--                            Vehicle update modal-->
+                            <div class="modal fade blur_modal" id="update_vehicles" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content custom_modal">
+                                        <div class="modal-header">
+                                            <h1 class="custom_header">Add a new Vehicle</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" id="vehicle_update_modal">
+                                            <div class="box_place">
+                                                <div>
+                                                    <label for="update_modal_vehicle_category" class="form-label">Vehicle category</label>
+                                                    <input class="form-control me-2" list="newVehicleCategories" placeholder="Select Category" id="update_modal_vehicle_category">
+                                                    <datalist id="newVehicleCategories">
+                                                        <option value="Car">
+                                                        <option value="Van">
+                                                        <option value="Lorry">
+                                                        <option value="Tractor">
+                                                    </datalist>
+                                                </div>
+                                                <div>
+                                                    <label for="update_modal_vehicle_fuel" class="form-label">Vehicle fuel type</label>
+                                                    <input class="form-control me-2" list="newVehicleFuelType" placeholder="Select fuel" id="update_modal_vehicle_fuel">
+                                                    <datalist id="newVehicleFuelType">
+                                                        <option value="Petrol">
+                                                        <option value="Diesel">
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                            <div class="box_place">
+                                                <div>
+                                                    <label for="update_modal_vehicle_status" class="form-label">Vehicle status</label>
+                                                    <input class="form-control me-2" list="newVehicleStatus" placeholder="Select current status" id="update_modal_vehicle_status">
+                                                    <datalist id="newVehicleStatus">
+                                                        <option value="Active">
+                                                        <option value="Available">
+                                                        <option value="Not available">
+                                                    </datalist>
+                                                </div>
+                                                <div>
+                                                    <label for="update_modal_vehicle_licence" class="form-label">Vehicle licence number</label>
+                                                    <input class="form-control me-2" placeholder="Enter licence number" id="update_modal_vehicle_licence">
+                                                </div>
+                                            </div>
+                                            <div class="vehicle_remarks_holder">
+                                                <div>
+                                                    <label for="update_modal_vehicle_remarks" class="form-label">Vehicle remarks</label>
+                                                    <textarea class="form-control me-2" placeholder="Enter vehicle remarks" id="update_modal_vehicle_remarks"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="btn_holder">
+                                                <button class="custom_green_btn" id="vehicleUpdateButton">Update</button>
+                                                <button id="vehicleDeleteButton" class="custom_delete_btn"><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div id="manage_equipment" class="custom_component">
@@ -1176,18 +1655,49 @@
                             <div>
                                 <div>
                                     <h1>Manage Equipment</h1>
-                                    <button type="button" class="custom_button" data-toggle="modal" data-target="#save_equipments">Add new</button>
+                                    <button type="button" class="custom_button" data-bs-toggle="modal" data-bs-target="#save_equipments" id="equipmentLoadTest">Add new</button>
 
-                                    <!--modal-->
-                                    <div class="modal fade blur_modal" id="save_equipments" data-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg">
+                                    <!--                        Equipment modal                        -->
+                                    <div class="modal fade blur_modal" id="save_equipments" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
                                             <div class="modal-content custom_modal">
                                                 <div class="modal-header">
                                                     <h1 class="custom_header">Add a new Equipment</h1>
-                                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-
+                                                    <div class="box_place">
+                                                        <div>
+                                                            <label for="modal_equipment_name" class="form-label">Equipment name</label>
+                                                            <input class="form-control me-2" placeholder="Enter equipment name" id="modal_equipment_name">
+                                                        </div>
+                                                        <div>
+                                                            <label for="modal_equipment_type" class="form-label">Equipment type</label>
+                                                            <input class="form-control me-2" list="equipmentType" placeholder="Equipment type" id="modal_equipment_type">
+                                                            <datalist id="equipmentType">
+                                                                <option value="Electrical">
+                                                                <option value="Mechanical">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box_place">
+                                                        <div>
+                                                            <label for="modal_equipment_status" class="form-label">Equipment status</label>
+                                                            <input class="form-control me-2" list="equipmentStatus" placeholder="Enter equipment name" id="modal_equipment_status">
+                                                            <datalist id="equipmentStatus">
+                                                                <option value="Available">
+                                                                <option value="Active">
+                                                                <option value="Completed">
+                                                            </datalist>
+                                                        </div>
+                                                        <div>
+                                                            <label for="modal_equipment_count" class="form-label">Equipment count</label>
+                                                            <input class="form-control me-2" placeholder="Equipment count" id="modal_equipment_count">
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn_holder">
+                                                        <button id="equipmentSaveButton" class="custom_green_btn">Save</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1210,16 +1720,17 @@
                         <div id="manage_equipment_body">
                             <table class="table scrollable-table">
                                 <thead>
-                                <tr>
-                                    <th scope="col" id="equipment_name">Name</th>
-                                    <th scope="col" id="equipment_type">Type</th>
-                                    <th scope="col" id="equipment_status">Status</th>
-                                    <th scope="col" id="equipment_count">count</th>
-                                </tr>
+                                    <tr>
+                                        <th scope="col" id="equipment_name">Name</th>
+                                        <th scope="col" id="equipment_type">Type</th>
+                                        <th scope="col" id="equipment_status">Status</th>
+                                        <th scope="col" id="equipment_count">count</th>
+                                    </tr>
                                 </thead>
                                 <tbody id="equipment_list_tbl_body">
 
-                                    <tr>
+                                    <tr class="equipment_row" data-bs-toggle="modal" data-bs-target="#update_equipments">
+                                        <td class="fixed-width equipment_id" style="display: none">wheel barrow</td>
                                         <td class="fixed-width equipment_name">wheel barrow</td>
                                         <td class="fixed-width equipment_type">tool</td>
                                         <td class="fixed-width equipment_status custom_status"> <p>Available</p></td>
@@ -1228,6 +1739,53 @@
 
                                 </tbody>
                             </table>
+<!--                            Update Equipment modal-->
+                            <div class="modal fade blur_modal" id="update_equipments" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content custom_modal">
+                                        <div class="modal-header">
+                                            <h1 class="custom_header">Update your Equipment</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="box_place">
+                                                <div>
+                                                    <label for="update_modal_equipment_name" class="form-label">Equipment name</label>
+                                                    <input class="form-control me-2" placeholder="Enter equipment name" id="update_modal_equipment_name">
+                                                </div>
+                                                <div>
+                                                    <label for="update_modal_equipment_type" class="form-label">Equipment type</label>
+                                                    <input class="form-control me-2" list="newEquipmentType" placeholder="Equipment type" id="update_modal_equipment_type">
+                                                    <datalist id="newEquipmentType">
+                                                        <option value="Electrical">
+                                                        <option value="Mechanical">
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                            <div class="box_place">
+                                                <div>
+                                                    <label for="update_modal_equipment_status" class="form-label">Equipment status</label>
+                                                    <input class="form-control me-2" list="newEquipmentStatus" placeholder="Enter equipment name" id="update_modal_equipment_status">
+                                                    <datalist id="newEquipmentStatus">
+                                                        <option value="Available">
+                                                        <option value="Active">
+                                                        <option value="Not Available">
+                                                    </datalist>
+                                                </div>
+                                                <div>
+                                                    <label for="update_modal_equipment_count" class="form-label">Equipment count</label>
+                                                    <input class="form-control me-2" placeholder="Equipment count" id="update_modal_equipment_count">
+                                                </div>
+                                            </div>
+                                            <div class="btn_holder">
+                                                <button id="equipmentUpdateButton" class="custom_green_btn">Update</button>
+                                                <button id="equipmentDeleteButton" class="custom_delete_btn"><i class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -1252,5 +1810,9 @@
 <script src="js/staff.js"></script>
 <script src="controller/fieldController.js"></script>
 <script src="controller/cropController.js"></script>
+<script src="controller/staffController.js"></script>
+<script src="controller/vehicleController.js"></script>
+<script src="controller/equipmentController.js"></script>
+<script src="controller/cultivateController.js"></script>
 </body>
 </html>

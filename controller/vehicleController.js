@@ -63,7 +63,7 @@ vehicleSaveBtn.click(function (e) {
             alert("Vehicle saved!")
         },
         error: function(xhr, status, error) {
-            alert("Customer Not Saved!")
+            alert("Vehicle Not Saved!")
         }
     });
 })

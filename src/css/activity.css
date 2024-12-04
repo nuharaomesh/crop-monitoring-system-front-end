@@ -4,7 +4,7 @@
 
 #activity_main_content {
     display: flex;
-    height: 90vh;
+    height: 89vh;
     gap: 5px;
 }
 
@@ -185,6 +185,7 @@
 
 #cultivation_header_right {
     width: 50%;
+    height: 60px;
     display: flex;
     justify-content: flex-end;
     align-content: end;
@@ -258,22 +259,29 @@
     border-radius: 10px;
     z-index: 2;
     margin-left: 10px;
+    border: 3px solid #cfffdb;
 }
 
 .field_card_head>div>img {
     width: 100%;
-    height: 100%;
+    height: 110%;
 
     object-fit: cover;
+    transition: height 0.4s ease;
+}
+
+.field_card_head>div>img:hover {
+    height: 120%;
+    transition: height 0.4s ease;
 }
 
 .field_card_body {
     height: 216px;
     background-color: white;
-    border: 2px solid #d7d7d7;
+    border: 2px solid #ebebeb;
     margin-top: 10px;
     padding: 0 10px;
-    border-radius: 9px 40px 13px 28px;
+    border-radius: 15px 80px 30px 30px;
 }
 
 .field_card_body>h1 {
@@ -370,11 +378,11 @@
                                                     /*Cultivation process */
 
 #cultivation_details {
-    width: 30%;
+    width: 100%;
 }
 
 #field_img {
-    width: 232px;
+    width: 360px;
     height: 165px;
 
     overflow: hidden;
@@ -403,6 +411,7 @@
 }
 
 #field_details div {
+    margin-top: 10px;
     display: flex;
 }
 
@@ -426,7 +435,8 @@
 #proceed_btn {
     width: 100%;
     height: 55px;
-    padding: 0 10px;
+    padding: 0 10px 0 0;
+    margin-top: 10px;
 }
 
 #proceed_btn>button {
@@ -478,6 +488,8 @@
 }
 
 #crop_details {
+    padding: 15px 0;
+    width: 210px;
 }
 
 #crop_details>p {
@@ -486,19 +498,32 @@
     margin-bottom: 0;
 }
 
-#crop_details>div {
+#cultivation_crop_name {
+    font-size: 25px;
+    color: #059b0b;
+}
+
+#cultivation_crop_category {
+    width: fit-content;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #323232;
+    background-color: #ffff90;
+}
+
+#equipment_and_staff {
     display: flex;
 }
 
-#crop_details>div>div>i {
+#equipment_and_staff>div>i {
     color: black;
     font-size: 14px;
 }
 
-#crop_details>div>div>h2 {
+#equipment_and_staff>div>h2 {
     font-size: 22px;
-    color: black;
-    padding: 17px;
+    padding: 23px;
     margin-bottom: 0;
 }
 
@@ -554,19 +579,19 @@
     height: 320px;
 }
 
-#cultivation_resources_staff_data {
+#cultivation_resources_staff_data, #cultivation_resources_added_staff_data {
     height: 50%;
 }
 
-#assigning_crop>hr,#assigning_equipment>hr {
+#assigning_crop>hr,#assigning_equipment>hr, #assigning_added_equipment>hr, #assigning_added_crop>hr {
     margin: 0;
 }
 
-#assign_crop_header,#assign_equipment_header {
+#assign_crop_header,#assign_equipment_header, #assign_added_equipment_header, #assign_added_crop_header {
     display: flex;
 }
 
-#assign_crop_header>p,#assign_equipment_header>p {
+#assign_crop_header>p,#assign_equipment_header>p, #assign_added_equipment_header>p, #assign_added_crop_header>p {
     margin-top: 5px;
     margin-right: 29px;
     margin-bottom: 3px;
@@ -576,7 +601,7 @@
     /*width: 5px;*/
 }
 
-#assign_crop_body,#assign_equipment_body {
+#assign_crop_body,#assign_equipment_body, #assign_added_equipment_body, #assign_added_crop_body {
     width: 100%;
     height: 190px;
     overflow: auto;
@@ -613,9 +638,9 @@
 .cultivated_field_card {
     height: 180px;
     margin-top: 13px;
-    border: 2px solid #e1e1e1;
+    border: 2px solid #f3f3f3;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 25px;
     box-sizing: border-box;
     padding: 8px;
 
@@ -629,6 +654,7 @@
 .cultivated_field_img {
     width: 30%;
     overflow: hidden;
+    border-radius: 17px;
 }
 
 .cultivated_field_img>img {
@@ -759,17 +785,17 @@
 
                     /*Cultivation staff table*/
 
-#cultivation_staff_table {
+#cultivation_staff_table, #cultivation_added_staff_table {
     height: 260px;
 }
 
-#cultivation_staff_table_head {
+#cultivation_staff_table_head, #cultivation_added_staff_table_head {
     box-sizing: border-box;
     padding: 10px;
     display: flex;
 }
 
-#cultivation_staff_table_head>p {
+#cultivation_staff_table_head>p, #cultivation_added_staff_table_head>p {
     font-size: 13px;
     color: #5A5A5A;
     font-weight: bolder;
@@ -780,7 +806,7 @@
 ::-webkit-scrollbar {
 }
 
-#cultivation_staff_table_body {
+#cultivation_staff_table_body, #cultivation_added_staff_table_body {
     width: 100%;
     height: 215px;
     overflow: auto;
@@ -829,6 +855,11 @@
     width: 230px;
 }
 
+#cultivation_process_handler {
+    padding: 10px;
+    height: 90vh;
+}
+
 .cultivation_staff_assign_btn {
     width: fit-content;
     height: 33px;
@@ -847,4 +878,54 @@
 
 .cultivation_staff_assign_btn:hover {
     background-color: #86B6FF;
+}
+
+#cultivation_resources_crop, #cultivation_added_resources_crop {
+    margin-right: 2px;
+}
+
+#cultivation_resources_equipment, #cultivation_added_resources_equipment {
+    margin-left: 2px;
+}
+
+#cultivation_process_handler_body {
+    height: 803px;
+}
+
+#cultivation_process_handler_body {
+    display: flex;
+}
+
+#cultivation_process_handler_body_left {
+    width: 23%;
+}
+
+#cultivation_process_handler_body_right {
+    padding: 10px;
+    width: 77%;
+}
+
+#cultivation_process_handler_added_tables, #cultivation_process_handler_data_tables {
+    height: 50%;
+    display: flex;
+    gap: 11px;
+}
+
+#cultivation_process_handler_data_tables {
+    margin-top: 5px;
+}
+
+#cultivation_process_handler_added_tables>div, #cultivation_process_handler_data_tables>div {
+    width: 400px;
+    height: 100%;
+}
+
+#cultivation_handler_staff_data_table, #cultivation_handler_staff_added_table {
+    width: 735px !important;
+}
+
+.staff_table_header {
+    font-size: 23px;
+    font-weight: bolder;
+    color: #919191;
 }
